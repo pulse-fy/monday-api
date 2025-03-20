@@ -75,7 +75,7 @@ class MondayBoard extends MondayAPI
         return $this->request(self::TYPE_MUTAT, $create);
     }
 
-    public function getBoards( Array $arguments = [], Array $fields = [])
+    public function getBoards( Array $arguments = [], Array $fields = ['id' , 'name'])
     {
         $Board = new Board();
 
